@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61e8364a-3f53-448a-a7a7-ee3c8ff1c888" name="更改" comment="" />
+    <list default="true" id="61e8364a-3f53-448a-a7a7-ee3c8ff1c888" name="更改" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/qtgui.exe" beforeDir="false" afterPath="$PROJECT_DIR$/dist/qtgui.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/t1.ui" beforeDir="false" afterPath="$PROJECT_DIR$/dist/t1.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/t3.ui" beforeDir="false" afterPath="$PROJECT_DIR$/dist/t3.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qtgui.py" beforeDir="false" afterPath="$PROJECT_DIR$/qtgui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/t1.ui" beforeDir="false" afterPath="$PROJECT_DIR$/t1.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/t3.ui" beforeDir="false" afterPath="$PROJECT_DIR$/t3.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/token.json" beforeDir="false" afterPath="$PROJECT_DIR$/token.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +30,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/bbsupn/PythonProject.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/bbsupn/pyiot.git&quot;,
     &quot;accountId&quot;: &quot;a4e59597-1c6f-4ab4-ba82-f12e090a7138&quot;
   }
 }</component>
@@ -36,30 +45,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.1.executor": "Run",
-    "Python.__init__.executor": "Run",
-    "Python._probe.executor": "Run",
-    "Python._run.executor": "Debug",
-    "Python.activity_recognition_demo.executor": "Run",
-    "Python.demo.executor": "Run",
-    "Python.onvifBase.executor": "Run",
-    "Python.qtgui.executor": "Debug",
-    "Python.t.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "E:/Program Files/Python39/Lib/site-packages/PyQt5/Qt5/bin/designer.exe",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+    &quot;Python._probe.executor&quot;: &quot;Run&quot;,
+    &quot;Python._run.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.activity_recognition_demo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.demo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.onvifBase.executor&quot;: &quot;Run&quot;,
+    &quot;Python.qtgui.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.t.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Program Files/Python39/Lib/site-packages/PyQt5/Qt5/bin/designer.exe&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
-}]]></component>
+}</component>
   <component name="PyDebuggerOptionsProvider">
     <option name="mySaveCallSignatures" value="true" />
     <option name="myDropIntoDebuggerOnFailedTests" value="true" />
     <option name="myPyQtBackend" value="pyqt5" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.qtgui">
     <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
@@ -172,6 +181,15 @@
       <option name="presentableId" value="Default" />
       <updated>1733735424582</updated>
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <option name="closed" value="true" />
+      <created>1735196284549</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1735196284549</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,7 +203,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="HEAD" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -201,6 +219,8 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

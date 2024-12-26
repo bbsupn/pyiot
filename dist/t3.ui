@@ -80,14 +80,14 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>690</y>
-     <width>271</width>
-     <height>81</height>
+     <x>670</x>
+     <y>730</y>
+     <width>91</width>
+     <height>61</height>
     </rect>
    </property>
    <property name="text">
-    <string>当前视频功能稳定性欠佳，仅供测试！</string>
+    <string>Preview_Release</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_3">

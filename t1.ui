@@ -585,7 +585,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>顶灯第一排</string>
+    <string>顶灯一排</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_11">
@@ -598,7 +598,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>顶灯第二排</string>
+    <string>顶灯二排</string>
    </property>
   </widget>
  </widget>

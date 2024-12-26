@@ -12,6 +12,7 @@ import aiohttp
 import cv2
 import ffmpeg
 import numpy as np
+import psutil
 import requests
 from PyQt5 import uic, QtCore
 from PyQt5.QtCore import *
@@ -26,7 +27,7 @@ token=''
 stream_url='http://192.168.10.200:81/videostream.cgi?loginuse=admin&loginpas=admin'+ '&' + str(time.time()) + str(random.randint(2000, 8000000))
 snapshot_url='http://192.168.10.200:81/snapshot.cgi?user=admin&pwd=admin'+ '&' + str(time.time()) + str(random.randint(2000, 8000000))
 info_url='http://192.168.10.200:81/get_status.cgi?loginuse=admin&loginpas=admin'+ '&' + str(time.time()) + str(random.randint(2000, 8000000))
-
+reboot_url='http://192.168.10.200:81/reboot.cgi?next_url=reboot.htm&loginuse=admin&loginpas=admin'
 
 def get_token():
     global prarams
@@ -183,6 +184,13 @@ class WindowEvent(QWidget,QtStyleTools):
         self.reboot.clicked.connect(self.handleButtonPress)
         self.stop_record.clicked.connect(self.stop_sign)
 
+
+    def checkprocess(self,processname):
+        pl = psutil.pids()
+        for pid in pl:
+            if psutil.Process(pid).name() == processname:
+                return pid
+
     def startupdate(self):
         id = self.idvar.toPlainText()
         if id == '':
@@ -206,7 +214,7 @@ class WindowEvent(QWidget,QtStyleTools):
         self.getu()
     def stop_sign(self):
         global st
-        if not Camera_Thread.isRunning(QThread()):
+        if not isinstance(self.checkprocess("ffmpeg.exe"),int):
             QMessageBox.warning(QWidget(), '提示', 'IP摄像头不可用，请检查摄像头是否正常！')
             return
         st=True
@@ -308,115 +316,78 @@ class WindowEvent(QWidget,QtStyleTools):
 
     def handleButtonRelease(self):
         global cty
-        if not Camera_Thread.isRunning(QThread()):
+        if not isinstance(self.checkprocess("ffmpeg.exe"), int):
             return
         control_url = 'http://192.168.10.200:81/decoder_control.cgi?loginuse=admin&loginpas=admin&command=' + cty + '&onestep=0' + '&' + str(time.time()) + str(random.randint(2000, 8000000))
         if self.sender() == self.up:
             try:
                 cty = '0'
-                req = requests.get(control_url)
-                result = re.findall(r'var result=\"(.+?)\";', str(req))
+                requests.get(control_url)
             except Exception as e:
-                if result:
-                    print('up is released\n')
-                else:
-                    raise Exception(str(e))
+                raise Exception(str(e))
         elif self.sender() == self.down:
             try:
                 cty = '2'
-                req = requests.get(control_url)
-                result = re.findall(r'var result=\"(.+?)\";', str(req))
+                requests.get(control_url)
             except Exception as e:
-                if result:
-                    print('down is released\n')
-                else:
-                    raise Exception(str(e))
+                raise Exception(str(e))
         elif self.sender() == self.left:
             try:
                 cty = '4'
-                req = requests.get(control_url)
-                result = re.findall(r'var result=\"(.+?)\";', str(req))
+                requests.get(control_url)
             except Exception as e:
-                if result:
-                    print('left is released\n')
-                else:
-                    raise Exception(str(e))
+                raise Exception(str(e))
         elif self.sender() == self.right:
             try:
                 cty = '6'
-                req = requests.get(control_url)
-                result = re.findall(r'var result=\"(.+?)\";', str(req))
+                requests.get(control_url)
             except Exception as e:
-                if result:
-                    print('right is released\n')
-                else:
-                    raise Exception(str(e))
+                raise Exception(str(e))
         QApplication.processEvents()
 
     def handleButtonPress(self):
         global cty
-        if not Camera_Thread.isRunning(QThread()):
-            QMessageBox.warning(QWidget(), '提示', 'IP摄像头不可用，请检查摄像头是否正常！')
+        if not isinstance(self.checkprocess("ffmpeg.exe"), int):
             return
         control_url = 'http://192.168.10.200:81/decoder_control.cgi?loginuse=admin&loginpas=admin&command=' + cty + '&onestep=0' + '&' + str(time.time()) + str(random.randint(2000, 8000000))
         if self.sender() == self.up:
             try:
                 cty = '1'
-                req = requests.get(control_url)
-                result = re.findall(r'var result=\"(.+?)\";', str(req))
+                requests.get(control_url)
             except Exception as e:
-                if result:
-                    print('up is ok\n')
-                else:
-                    raise Exception(str(e))
+                raise Exception(str(e))
         elif self.sender() == self.down:
             try:
                 cty = '3'
-                req = requests.get(control_url)
-                result = re.findall(r'var result=\"(.+?)\";', str(req))
+                requests.get(control_url)
             except Exception as e:
-                if result:
-                    print('down is ok\n')
-                else:
-                    raise Exception(str(e))
+                raise Exception(str(e))
         elif self.sender() == self.left:
             try:
                 cty = '5'
-                req = requests.get(control_url)
-                result = re.findall(r'var result=\"(.+?)\";', str(req))
+                requests.get(control_url)
             except Exception as e:
-                if result:
-                    print('left is ok\n')
-                else:
-                    raise Exception(str(e))
+                raise Exception(str(e))
         elif self.sender() == self.right:
             try:
                 cty = '7'
-                req = requests.get(control_url)
-                result = re.findall(r'var result=\"(.+?)\";', str(req))
+                requests.get(control_url)
             except Exception as e:
-                if result:
-                    print('right is ok\n')
-                else:
-                    raise Exception(str(e))
+                raise Exception(str(e))
         elif self.sender() == self.center:
             try:
                 cty = '25'
-                req = requests.get(control_url)
-                result = re.findall(r'var result=\"(.+?)\";', str(req))
+                requests.get(control_url)
             except Exception as e:
-                if result:
-                    print('center is ok\n')
-                else:
-                    raise Exception(str(e))
+                raise Exception(str(e))
         elif self.sender() == self.reboot:
-            requests.get('http://192.168.10.200:81/reboot.cgi?next_url=reboot.htm&loginuse=admin&loginpas=admin')
+            requests.get(reboot_url)
         QApplication.processEvents()
 
 
     def handlePrintScreen(self):
         global snapshot_url
-        if not Camera_Thread.isRunning(QThread()):
+        if not isinstance(self.checkprocess("ffmpeg.exe"),int):
             QMessageBox.warning(QWidget(), '提示', 'IP摄像头不可用，请检查摄像头是否正常！')
             return
         camera=cv2.VideoCapture(snapshot_url)
@@ -441,7 +412,7 @@ class WindowEvent(QWidget,QtStyleTools):
             camera.release()
 
     def handleStartRecord(self):
-        if Camera_Thread.isRunning(QThread()):
+        if isinstance(self.checkprocess("ffmpeg.exe"),int):
             t=record_thread()
             t.start()
         else:
@@ -455,7 +426,7 @@ class WindowEvent(QWidget,QtStyleTools):
 
 
     def stop_play(self):
-        if Camera_Thread.isRunning(QThread()):
+        if isinstance(self.checkprocess("ffmpeg.exe"),int):
             self.camera_thread.terminate()
             ff.kill()
             self.play_area.setPixmap(QPixmap(""))

@@ -106,8 +106,6 @@ class WindowEvent(QWidget):
     def __init__(self):
         super().__init__()
         self.close_signal=pyqtSignal()
-        with open("record.txt", 'w', encoding='UTF-8') as file:
-            file.write('')
         self.init_ui()
         self.stime()
         self.thread = QThread()
@@ -145,7 +143,7 @@ class WindowEvent(QWidget):
         self.time=self.ui.label_3
         self.rygled=self.ui.label_8
         self.waterpump=self.ui.label_10
-        self.idvar=self.ui.textEdit_4
+        self.idvar=self.ui.label_56
         self.opencamsys=self.ui.pushButton_4
         self.play=self.ui2.pushButton
         self.kplay=self.ui2.pushButton_2
@@ -252,7 +250,7 @@ class WindowEvent(QWidget):
         return False
 
     def startupdate(self):
-        id = self.idvar.toPlainText()
+        id = self.idvar.text()
         if id == '':
             QMessageBox.warning(QWidget(), '提示', 'id还没有被正确设置!无法继续！')
             return
@@ -285,7 +283,7 @@ class WindowEvent(QWidget):
         self.record_state.setVisible(False)
 
     def control(self):
-        id = self.idvar.toPlainText()
+        id = self.idvar.text()
         if id == '':
             QMessageBox.warning(QWidget(), '提示', 'id还没有被正确设置!无法继续！')
             return
@@ -516,7 +514,7 @@ class WindowEvent(QWidget):
         设置周期性更新，定期获取设备状态。
         """
         font = 'http://api.nlecloud.com/devices/'
-        self.worker = UpdateWorker(font, self.idvar.toPlainText(), prarams)
+        self.worker = UpdateWorker(font, self.idvar.text(), prarams)
         self.worker1 = lora(font, prarams)
         self.worker.moveToThread(self.thread)
         self.worker1.moveToThread(self.thread1)
@@ -545,7 +543,7 @@ class WindowEvent(QWidget):
         """
         处理从工作线程传来的更新信息。
         """
-        id = self.idvar.toPlainText()
+        id = self.idvar.text()
         url_prefix = f'http://api.nlecloud.com/Cmds?deviceId={id}&apiTag='
         header = {"AccessToken": token, "Content-Type": "application/json"}
         endpoint = update_info["endpoint"]
@@ -566,7 +564,7 @@ class WindowEvent(QWidget):
         """
         处理从工作线程传来的更新信息。
         """
-        id = self.idvar.toPlainText()
+        id = self.idvar.text()
         endpoint = update_info["endpoint"]
         value = update_info["value"]
         led_state = update_info["led_state"]

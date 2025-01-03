@@ -1,0 +1,62 @@
+<RCC>
+  <qresource prefix="id">
+    <file>res/id.svg</file>
+  </qresource>
+  <qresource prefix="water">
+    <file>res/液位.svg</file>
+  </qresource>
+  <qresource prefix="ser">
+    <file>res/串口2.svg</file>
+  </qresource>
+  <qresource prefix="car">
+    <file>res/车辆管理.svg</file>
+  </qresource>
+  <qresource prefix="intime">
+    <file>res/icon-实时刷新.svg</file>
+  </qresource>
+  <qresource prefix="fetch">
+    <file>res/获取.svg</file>
+  </qresource>
+  <qresource prefix="log">
+    <file>res/日志.svg</file>
+  </qresource>
+  <qresource prefix="camera">
+    <file>res/5摄像头.svg</file>
+  </qresource>
+  <qresource prefix="fire">
+    <file>res/Fill_1.svg</file>
+  </qresource>
+  <qresource prefix="rgb">
+    <file>res/三色灯.svg</file>
+  </qresource>
+  <qresource prefix="waterpump">
+    <file>res/水泵.svg</file>
+  </qresource>
+  <qresource prefix="light_s">
+    <file>res/照明灯.svg</file>
+  </qresource>
+  <qresource prefix="fan">
+    <file>res/风扇_.svg</file>
+  </qresource>
+  <qresource prefix="red">
+    <file>res/红灯.svg</file>
+  </qresource>
+  <qresource prefix="yellow">
+    <file>res/黄灯.svg</file>
+  </qresource>
+  <qresource prefix="green">
+    <file>res/绿灯.svg</file>
+  </qresource>
+  <qresource prefix="light">
+    <file>res/光照度.svg</file>
+  </qresource>
+  <qresource prefix="airq">
+    <file>res/空气质量.svg</file>
+  </qresource>
+  <qresource prefix="temp">
+    <file>res/温度.svg</file>
+  </qresource>
+  <qresource prefix="wet">
+    <file>res/湿度.svg</file>
+  </qresource>
+</RCC>

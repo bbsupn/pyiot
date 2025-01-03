@@ -1,21 +1,24 @@
 import base64
 import re
+import time
 from itertools import groupby
 
 import requests
 import json
 import os
 import cv2
+import serial
+from PyQt5.QtSerialPort import QSerialPortInfo, QSerialPort
 from requests.auth import HTTPDigestAuth
 '''
 
 from openpyxl import Workbook
 
 '''
-'''
+
 login_data={
-    'Account':'15084451067',
-    'Password':'113727'
+    'Account':'13377815672',
+    'Password':'114514'
 }
 response=requests.post('http://api.nlecloud.com/users/login',data=login_data)
 data=response.json()
@@ -33,7 +36,10 @@ with open('token.json','w',encoding='utf-8') as df:
     json.dump(data_dict,df)
     df.close()
 
-'''
+with open("token.json", 'r', encoding='UTF-8') as load:
+    prarams = json.load(load)
+    token = prarams["AccessToken"]
+    load.close()
 
 '''
 prarams={
@@ -83,21 +89,22 @@ for row in items["ResultObj"]["DataPoints"]:
 
 wb.save('data.xlsx')
 '''
-'''
-id = 149475
+
+id = 1164821
 prarams={
-    'AccessToken': '77AAEA7D3F0E81065C5570D5C3DA56D69AAD57FBC1FAB27738B13331EEBEF24169375EA330C1F62A5381DC8F499DEFC9C2418E4590CA425ED060C81780FBF4BBD0CE2B7DAC42EC2E854CFEBEBC94381526316666E8A7207311322BF42978AA57F82EB1A884D887CA8D449E8FC058F307697A25DEE3C80BE17F1AC73C44E9CF23B08D878E71C971AA55F7032AB23E624A23C70DE8CDE1C546AA335437ED57A58E8E695EC3ECF43D4E2F436507761C5BE9B6F303FCC2B9E424AAA48C8B71905D3C9CA3E78F1BE654F385E13569A8196A15AEED7DB845B4163926C08CFB3BFC5E21'
+    'AccessToken': token
 }
 
-font = ' http://192.168.0.138/devices/'
+font = ' http://api.nlecloud.com/devices/'
 response = requests.get(
-    font+str(id)+'/sensors/'+'rgb_red',
+    font+str(id)+'/sensors/'+'rgb_yellow',
     params=prarams
 )
 data = response.json()
+print(data)
 json_data = json.dumps(data)
 items = json.loads(json_data)
-'''
+
 '''
 print(items)
 list = items["ResultObj"]
@@ -109,10 +116,10 @@ else:
 '''
 '''
 '''
-'''
+
 value = items["ResultObj"]["Value"]
 print(value)
-'''
+
 '''
 if 0 <= value < 1:
     print(value)
@@ -203,5 +210,4 @@ print(list[1])
 print(list[9])
 '''
 
-re=requests.get('http://192.168.10.200:81')
-print(re)
+

@@ -4,13 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61e8364a-3f53-448a-a7a7-ee3c8ff1c888" name="更改" comment="update">
+    <list default="true" id="b9ab2cb6-f908-40a0-afb5-4f056a6b987a" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/PythonProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/qtgui.exe" beforeDir="false" afterPath="$PROJECT_DIR$/dist/qtgui.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/t1.ui" beforeDir="false" afterPath="$PROJECT_DIR$/dist/t1.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/t3.ui" beforeDir="false" afterPath="$PROJECT_DIR$/dist/t3.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/Lanter.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/qtgui.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/record.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/t1.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/t2.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/t3.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/token.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/onvifBase.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/qtgui.py" beforeDir="false" afterPath="$PROJECT_DIR$/qtgui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/t.py" beforeDir="false" afterPath="$PROJECT_DIR$/t.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/t1.ui" beforeDir="false" afterPath="$PROJECT_DIR$/t1.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/t2.ui" beforeDir="false" afterPath="$PROJECT_DIR$/t2.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/t3.ui" beforeDir="false" afterPath="$PROJECT_DIR$/t3.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/token.json" beforeDir="false" afterPath="$PROJECT_DIR$/token.json" afterDir="false" />
     </list>
@@ -35,135 +48,31 @@
   }
 }</component>
   <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 0
 }</component>
-  <component name="ProjectId" id="2pyPc8DpISrcwCpW1HPmHXyfuuU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2r1nBBLNEGGSG1d4eHX3Ak682Y1" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
-    &quot;Python._probe.executor&quot;: &quot;Run&quot;,
-    &quot;Python._run.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.activity_recognition_demo.executor&quot;: &quot;Run&quot;,
-    &quot;Python.demo.executor&quot;: &quot;Run&quot;,
-    &quot;Python.onvifBase.executor&quot;: &quot;Run&quot;,
-    &quot;Python.qtgui.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.t.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Program Files/Python39/Lib/site-packages/PyQt5/Qt5/bin/designer.exe&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.__init__.executor": "Debug",
+    "Python.qtgui.executor": "Debug",
+    "Python.qtgui123.executor": "Debug",
+    "Python.t.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "F:/pyiot",
+    "settings.editor.selected.configurable": "Code Search"
   }
-}</component>
-  <component name="PyDebuggerOptionsProvider">
-    <option name="mySaveCallSignatures" value="true" />
-    <option name="myDropIntoDebuggerOnFailedTests" value="true" />
-    <option name="myPyQtBackend" value="pyqt5" />
-  </component>
-  <component name="RunManager" selected="Python.qtgui">
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PythonProject" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../Program Files/Python313/Lib/ctypes" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../Program Files/Python313/Lib/ctypes/__init__.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="_probe" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PythonProject" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../Program Files/Python313/Lib/site-packages/ffmpeg" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../Program Files/Python313/Lib/site-packages/ffmpeg/_probe.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="_run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PythonProject" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../Program Files/Python313/Lib/site-packages/ffmpeg" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../Program Files/Python313/Lib/site-packages/ffmpeg/_run.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="qtgui" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="PythonProject" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/qtgui.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python._run" />
-        <item itemvalue="Python._probe" />
-        <item itemvalue="Python.__init__" />
-      </list>
-    </recent_temporary>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\pyiot" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -175,21 +84,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="61e8364a-3f53-448a-a7a7-ee3c8ff1c888" name="更改" comment="" />
-      <created>1733735424582</created>
+      <changelist id="b9ab2cb6-f908-40a0-afb5-4f056a6b987a" name="更改" comment="" />
+      <created>1735735311192</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1733735424582</updated>
+      <updated>1735735311192</updated>
     </task>
-    <task id="LOCAL-00001" summary="update">
-      <option name="closed" value="true" />
-      <created>1735196284549</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1735196284549</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,40 +97,10 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$" />
-    </ignored-roots>
-    <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
-  </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="s" />
-        <watch expression="self" />
-        <watch expression="self" />
-        <watch expression="self" />
-        <watch expression="self" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>

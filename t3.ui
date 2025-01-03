@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>761</width>
-    <height>778</height>
+    <width>1273</width>
+    <height>1116</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -18,14 +18,14 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>761</width>
-    <height>778</height>
+    <width>1273</width>
+    <height>1116</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>761</width>
-    <height>778</height>
+    <width>1273</width>
+    <height>1116</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -33,15 +33,16 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>C:/Users/Administrator/.designer/backup/Lanter.ico</normaloff>C:/Users/Administrator/.designer/backup/Lanter.ico</iconset>
+    <normaloff>C:/Users/Administrator/.designer/backup/Lanter.ico</normaloff>
+    <normalon>Lanter.ico</normalon>C:/Users/Administrator/.designer/backup/Lanter.ico</iconset>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
      <x>20</x>
      <y>21</y>
-     <width>721</width>
-     <height>461</height>
+     <width>1231</width>
+     <height>661</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -54,11 +55,14 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>520</y>
-     <width>161</width>
-     <height>41</height>
+     <x>140</x>
+     <y>700</y>
+     <width>191</width>
+     <height>61</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;黑体&quot;;</string>
    </property>
    <property name="text">
     <string>打开摄像头视频流</string>
@@ -67,11 +71,14 @@
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>590</y>
-     <width>161</width>
-     <height>41</height>
+     <x>140</x>
+     <y>780</y>
+     <width>191</width>
+     <height>61</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;黑体&quot;;</string>
    </property>
    <property name="text">
     <string>关闭摄像头视频流</string>
@@ -80,24 +87,30 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>670</x>
-     <y>730</y>
-     <width>91</width>
-     <height>61</height>
+     <x>1100</x>
+     <y>1080</y>
+     <width>171</width>
+     <height>41</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18pt &quot;黑体&quot;;</string>
+   </property>
    <property name="text">
-    <string>Preview_Release</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Preview_Release&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">
     <rect>
-     <x>360</x>
-     <y>500</y>
-     <width>51</width>
-     <height>51</height>
+     <x>600</x>
+     <y>710</y>
+     <width>71</width>
+     <height>71</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;黑体&quot;;</string>
    </property>
    <property name="text">
     <string>上</string>
@@ -106,11 +119,14 @@
   <widget class="QPushButton" name="pushButton_4">
    <property name="geometry">
     <rect>
-     <x>300</x>
-     <y>560</y>
-     <width>51</width>
-     <height>51</height>
+     <x>520</x>
+     <y>790</y>
+     <width>71</width>
+     <height>71</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;黑体&quot;;</string>
    </property>
    <property name="text">
     <string>左</string>
@@ -119,11 +135,14 @@
   <widget class="QPushButton" name="pushButton_5">
    <property name="geometry">
     <rect>
-     <x>420</x>
-     <y>560</y>
-     <width>51</width>
-     <height>51</height>
+     <x>680</x>
+     <y>790</y>
+     <width>71</width>
+     <height>71</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;黑体&quot;;</string>
    </property>
    <property name="text">
     <string>右</string>
@@ -132,11 +151,14 @@
   <widget class="QPushButton" name="pushButton_6">
    <property name="geometry">
     <rect>
-     <x>360</x>
-     <y>620</y>
-     <width>51</width>
-     <height>51</height>
+     <x>600</x>
+     <y>870</y>
+     <width>71</width>
+     <height>71</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;黑体&quot;;</string>
    </property>
    <property name="text">
     <string>下</string>
@@ -145,11 +167,14 @@
   <widget class="QPushButton" name="pushButton_7">
    <property name="geometry">
     <rect>
-     <x>620</x>
-     <y>520</y>
-     <width>81</width>
-     <height>41</height>
+     <x>1030</x>
+     <y>760</y>
+     <width>141</width>
+     <height>61</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;黑体&quot;;</string>
    </property>
    <property name="text">
     <string>抓拍</string>
@@ -158,24 +183,30 @@
   <widget class="QPushButton" name="pushButton_8">
    <property name="geometry">
     <rect>
-     <x>570</x>
-     <y>590</y>
-     <width>91</width>
-     <height>41</height>
+     <x>940</x>
+     <y>870</y>
+     <width>141</width>
+     <height>61</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;黑体&quot;;</string>
+   </property>
    <property name="text">
-    <string>录制</string>
+    <string>开始录制</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>640</y>
-     <width>51</width>
+     <y>880</y>
+     <width>71</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;黑体&quot;;</string>
    </property>
    <property name="text">
     <string>制造商:</string>
@@ -184,11 +215,14 @@
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>630</y>
-     <width>91</width>
+     <x>90</x>
+     <y>870</y>
+     <width>221</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;黑体&quot;;</string>
    </property>
    <property name="text">
     <string/>
@@ -198,23 +232,29 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>660</y>
-     <width>41</width>
+     <y>930</y>
+     <width>71</width>
      <height>31</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;黑体&quot;;</string>
+   </property>
    <property name="text">
-    <string>模型:</string>
+    <string>序列号:</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>660</y>
-     <width>191</width>
+     <x>90</x>
+     <y>930</y>
+     <width>251</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;黑体&quot;;</string>
    </property>
    <property name="text">
     <string/>
@@ -224,10 +264,13 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>690</y>
-     <width>61</width>
+     <y>980</y>
+     <width>91</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;黑体&quot;;</string>
    </property>
    <property name="text">
     <string>固件版本:</string>
@@ -236,11 +279,14 @@
   <widget class="QLabel" name="label_8">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>690</y>
+     <x>120</x>
+     <y>980</y>
      <width>171</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;黑体&quot;;</string>
    </property>
    <property name="text">
     <string/>
@@ -250,10 +296,13 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>720</y>
-     <width>61</width>
+     <y>1030</y>
+     <width>101</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;黑体&quot;;</string>
    </property>
    <property name="text">
     <string>无线MAC：</string>
@@ -262,11 +311,14 @@
   <widget class="QLabel" name="label_10">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>720</y>
-     <width>141</width>
+     <x>120</x>
+     <y>1030</y>
+     <width>261</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;黑体&quot;;</string>
    </property>
    <property name="text">
     <string/>
@@ -276,10 +328,13 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>750</y>
-     <width>71</width>
+     <y>1080</y>
+     <width>131</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;黑体&quot;;</string>
    </property>
    <property name="text">
     <string>以太网MAC：</string>
@@ -288,11 +343,14 @@
   <widget class="QLabel" name="label_12">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>750</y>
-     <width>181</width>
+     <x>150</x>
+     <y>1080</y>
+     <width>271</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;黑体&quot;;</string>
    </property>
    <property name="text">
     <string/>
@@ -301,11 +359,14 @@
   <widget class="QPushButton" name="pushButton_9">
    <property name="geometry">
     <rect>
-     <x>360</x>
-     <y>560</y>
-     <width>51</width>
-     <height>51</height>
+     <x>600</x>
+     <y>790</y>
+     <width>71</width>
+     <height>71</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;黑体&quot;;</string>
    </property>
    <property name="text">
     <string>C</string>
@@ -314,27 +375,50 @@
   <widget class="QPushButton" name="pushButton_12">
    <property name="geometry">
     <rect>
-     <x>610</x>
-     <y>660</y>
-     <width>101</width>
-     <height>41</height>
+     <x>1030</x>
+     <y>970</y>
+     <width>141</width>
+     <height>61</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;黑体&quot;;</string>
    </property>
    <property name="text">
     <string>重启设备</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_13">
+  <widget class="QPushButton" name="pushButton_10">
    <property name="geometry">
     <rect>
-     <x>670</x>
-     <y>590</y>
-     <width>91</width>
-     <height>41</height>
+     <x>1120</x>
+     <y>870</y>
+     <width>131</width>
+     <height>61</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;黑体&quot;;</string>
    </property>
    <property name="text">
     <string>停止录制</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>980</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 26pt &quot;微软雅黑&quot;;
+color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>录制中...</string>
    </property>
   </widget>
  </widget>
